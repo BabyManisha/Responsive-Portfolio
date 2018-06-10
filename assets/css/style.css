@@ -14,6 +14,9 @@ header{
     height: 68px;
     background-color: white;
     border-bottom: 1px solid #cccccc;
+    top: 0;
+    position: sticky;
+    z-index: 1;
 }
 
 main{
@@ -30,8 +33,9 @@ footer{
     padding: 0;
     border-top: 7px solid #4aaaa5;
     margin-top: -30px;
-    /* bottom: 0; */
-    /* position: absolute; */
+    bottom: 0;
+    position: sticky;
+    z-index: 1;
 }
 
 footer p{
@@ -186,6 +190,16 @@ button{
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 640px) { 
+    header{
+        top: 0;
+        position: unset;
+    }
+
+    footer{
+        bottom: 0;
+        position: unset;
+    }
+
     .main-container{
         width: 85%;
     }
